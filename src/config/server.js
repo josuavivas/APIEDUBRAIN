@@ -18,9 +18,9 @@ app.use(cors());
 require('dotenv').config();
 
 
-mongoose.connect(`mongodb+srv://Shirley:${process.env.PASSWORD_DB}@bddislexia.y7xut.mongodb.net/bddislexia?retryWrites=true&w=majority`,
+mongoose.connect(`mongodb+srv://edubrain123:${process.env.PASSWORD_DB}@edubrain.rpnpa.mongodb.net/dbedubrain?retryWrites=true&w=majority`,
     { useNewUrlParser: true })
-    .then(() => console.log('Db is conencted'))
+    .then(() => console.log('Db is connected'))
     .catch(err => console.error(err));
 
 app.use(bodyParser.urlencoded({ extended: false }));
